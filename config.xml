@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.got.gameofthrones" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>GOT</name>
-    <description>GOT</description>
+<widget id="io.got.flashlight" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>GOT Flash Light</name>
+    <description>GOT Flash Light</description>
     <author email="mattiaa95@gmail.com">Mattia La Spina</author>
     <content src="index.html" />
     <access origin="*" />
@@ -85,7 +85,8 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^3.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-admob-free" spec="~0.25.0">
-        <variable name="ADMOB_APP_ID" value="ca-app-pub-8119907816555669~9016303293" />
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-8119907816555669~7145915900" />
     </plugin>
+    <plugin name="cordova-plugin-flashlight" spec="~3.2.0" />
     <engine name="android" spec="~7.1.4" />
 </widget>

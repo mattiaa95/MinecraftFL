@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AdMobFree } from '@ionic-native/admob-free/ngx';
+import { Flashlight } from '@ionic-native/flashlight/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { AdMobFree } from '@ionic-native/admob-free/ngx';
     StatusBar,
     SplashScreen,
     AdMobFree,
+    Flashlight,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

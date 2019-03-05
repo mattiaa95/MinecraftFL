@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free/ngx';
+import { Flashlight } from '@ionic-native/flashlight/ngx';
 
 @Component({
   selector: 'app-home',
@@ -21,9 +22,9 @@ export class HomePage {
   selected:boolean=true;
   repetido:number = 0;
 
-  constructor(private admobFree: AdMobFree) {
+  constructor(private admobFree: AdMobFree,private flashlight: Flashlight) {
     const addConfig: AdMobFreeBannerConfig = {
-      id: 'ca-app-pub-8119907816555669/5771138955',
+      id: 'ca-app-pub-8119907816555669/6954344216',
       isTesting: false,
       autoShow: true
     };
@@ -40,7 +41,7 @@ export class HomePage {
     fondo.className = "off hydrated";
   }
 
-  Switch() {
+  SwitchOn() {
     if (this.selected) {
       this.selected = false;
       setTimeout(()=> {
@@ -56,7 +57,28 @@ export class HomePage {
         fondo.className = this.classes[number];
         this.count++;
         this.selected = true;
-      }, 485);
+      }, 185);
+    }
+  }
+
+  SwitchOff() {
+    if (this.selected) {
+      this.selected = false;
+      setTimeout(()=> {
+        let fondo = document.getElementById("fotContent");
+        fondo.className = "off hydrated";
+        this.selected = true;
+      }, 185);
+    }
+  }
+
+  Switch(){
+    if (!this.flashlight.isSwitchedOn()) {
+      this.flashlight.switchOn();
+      this.SwitchOn();
+    } else {
+      this.flashlight.switchOff();
+      this.SwitchOff();
     }
   }
 

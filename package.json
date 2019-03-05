@@ -1,5 +1,5 @@
 {
-  "name": "GOT",
+  "name": "GOTFL",
   "version": "0.0.1",
   "author": "Mattia La Spina",
   "homepage": "",
@@ -22,13 +22,16 @@
     "@angular/router": "^7.2.2",
     "@ionic-native/admob-free": "^5.2.0",
     "@ionic-native/core": "^5.0.0",
+    "@ionic-native/flashlight": "^5.2.0",
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.0.0",
     "cordova-admob-sdk": "^0.22.0",
     "cordova-android": "~7.1.4",
     "cordova-plugin-admob-free": "^0.25.0",
+    "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-flashlight": "~3.2.0",
     "cordova-plugin-ionic-keyboard": "^2.1.3",
     "cordova-plugin-ionic-webview": "^3.1.2",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -65,7 +68,7 @@
     "tslint": "~5.12.0",
     "typescript": "~3.1.6"
   },
-  "description": "GOT",
+  "description": "GOTFL",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
@@ -77,8 +80,9 @@
       },
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-admob-free": {
-        "ADMOB_APP_ID": "ca-app-pub-8119907816555669~9016303293"
-      }
+        "ADMOB_APP_ID": "ca-app-pub-8119907816555669~7145915900"
+      },
+      "cordova-plugin-flashlight": {}
     },
     "platforms": [
       "android"
